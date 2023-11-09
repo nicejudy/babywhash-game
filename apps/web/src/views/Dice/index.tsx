@@ -51,7 +51,7 @@ const Dice = () => {
     currencyBalance,
     parsedAmount,
     inputError
-  } = useGameInfo(value, shimmerTokens.cgt)
+  } = useGameInfo(value, shimmerTokens.bb)
 
   const [approval, approveCallback] = useApproveCallback(parsedAmount, addresses.flip[148])
 
@@ -173,7 +173,7 @@ const Dice = () => {
                   onChange={handleChange}
                   max={currencyBalanceNumber.toFixed(18)}
                   maxAmount={currencyBalanceNumber}
-                  symbol="CGT"
+                  symbol="BB"
                   addLiquidityUrl=""
                   inputTitle={t("Bet")}
                   decimals={18}
@@ -205,11 +205,11 @@ const Dice = () => {
               <Flex flexDirection="column">
                 <Flex justifyContent="space-between" mb="5px">
                   <Text>Input bet :</Text>
-                  <Text>{(Number(value)).toFixed(2)} CGT</Text>
+                  <Text>{(Number(value)).toFixed(2)} BB</Text>
                 </Flex>
                 <Flex justifyContent="space-between" mb="5px" pt="5px" borderTop={`1px solid ${theme.colors.text99}`}>
                   <Text>Maximum profit :</Text>
-                  <Text>{value ? "+" : ""}{(Number(value) * 98/(100 - (pan === 0 ? 100 - prediction : prediction)) - Number(value)).toFixed(2)} CGT</Text>
+                  <Text>{value ? "+" : ""}{(Number(value) * 98/(100 - (pan === 0 ? 100 - prediction : prediction)) - Number(value)).toFixed(2)} BB</Text>
                 </Flex>
                 <Flex justifyContent="space-between" mb="5px" pt="5px" borderTop={`1px solid ${theme.colors.text99}`}>
                   <Text>Multiplier :</Text>
@@ -225,7 +225,7 @@ const Dice = () => {
                   approveCallback={approveCallback}
                   approvalSubmitted={approvalSubmitted}
                   setApprovalSubmitted={setApprovalSubmitted}
-                  currency={shimmerTokens.cgt}
+                  currency={shimmerTokens.bb}
                   swapInputError={inputError}
                   parsedAmount={parsedAmount}
                   onStake={(v: string) => {console.log(v);}}

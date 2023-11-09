@@ -25,6 +25,19 @@ const PriceLink = styled.a`
   }
 `;
 
+const PriceLink1 = styled.div`
+  display: flex;
+  align-items: center;
+  svg {
+    transition: transform 0.3s;
+  }
+  :hover {
+    svg {
+      transform: scale(1.2);
+    }
+  }
+`;
+
 const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
   buyCakeLink,
   cakePriceUsd,
@@ -32,14 +45,11 @@ const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
   showSkeleton = true,
 }) => {
   return cakePriceUsd ? (
-    <PriceLink
-      href={buyCakeLink}
-      target="_blank"
-    >
+    <PriceLink1>
       {/* <LogoRound width="24px" mr="8px" /> */}
-      <img src={"/images/cgt.png"} width="24px" />
+      <img src={"/images/bb.png"} width="24px" />
       <Text color={color} bold ml="5px">{`$${cakePriceUsd.toFixed(3)}`}</Text>
-    </PriceLink>
+    </PriceLink1>
   ) : showSkeleton ? (
     <Skeleton width={80} height={24} />
   ) : null;

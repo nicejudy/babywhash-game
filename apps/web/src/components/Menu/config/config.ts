@@ -46,23 +46,23 @@ const config: (
   chainId?: number,
 ) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) =>
   [
-    {
-      label: t('Trade'),
-      icon: SwapIcon,
-      fillIcon: SwapFillIcon,
-      href: '/',
-      showItemsOnMobile: true,
-      items: [
-        {
-          label: t('Swap'),
-          href: '/',
-        },
-        {
-          label: t('Liquidity'),
-          href: '/liquidity',
-        },
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
+    // {
+    //   label: t('Trade'),
+    //   icon: SwapIcon,
+    //   fillIcon: SwapFillIcon,
+    //   href: '/',
+    //   showItemsOnMobile: true,
+    //   items: [
+    //     {
+    //       label: t('Swap'),
+    //       href: '/',
+    //     },
+    //     {
+    //       label: t('Liquidity'),
+    //       href: '/liquidity',
+    //     },
+    //   ].map((item) => addMenuItemSupported(item, chainId)),
+    // },
     // {
     //   label: t('Farm'),
     //   href: '/farms',
@@ -83,48 +83,51 @@ const config: (
     //   items: [
     //   ].map((item) => addMenuItemSupported(item, chainId)),
     // },
-    {
-      label: t('Earn'),
-      href: '/pools',
-      icon: EarnIcon,
-      fillIcon: EarnFillIcon,
-      image: '/images/cgt.png',
-      items: [
-        {
-          label: t('Farms'),
-          href: '/farms',
-        },
-        {
-          label: t('Pools'),
-          href: '/pools',
-        },
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
     // {
-    //   label: t('Game'),
-    //   icon: TrophyIcon,
-    //   fillIcon: TrophyFillIcon,
-    //   href: '/flip',
-    //   showItemsOnMobile: true,
+    //   label: t('Earn'),
+    //   href: '/pools',
+    //   icon: EarnIcon,
+    //   fillIcon: EarnFillIcon,
+    //   image: '/images/cgt.png',
     //   items: [
     //     {
-    //       label: t('Flip'),
-    //       href: '/flip',
+    //       label: t('Farms'),
+    //       href: '/farms',
     //     },
     //     {
-    //       label: t('Dice'),
-    //       href: '/dice',
+    //       label: t('Pools'),
+    //       href: '/pools',
     //     },
     //   ].map((item) => addMenuItemSupported(item, chainId)),
     // },
     {
-      label: 'Presale',
-      href: '/presale',
-      icon: IfoIcon,
-      hideSubNav: true,
-      showItemsOnMobile: false,
-      items: []
+      label: t('Flip'),
+      icon: TrophyIcon,
+      fillIcon: TrophyFillIcon,
+      href: '/flip',
+      showItemsOnMobile: true,
+      items: [
+
+      ].map((item) => addMenuItemSupported(item, chainId)),
     },
+    {
+      label: t('Dice'),
+      icon: TrophyIcon,
+      fillIcon: TrophyFillIcon,
+      href: '/dice',
+      showItemsOnMobile: true,
+      items: [
+        
+      ].map((item) => addMenuItemSupported(item, chainId)),
+    },
+    // {
+    //   label: 'Presale',
+    //   href: '/presale',
+    //   icon: IfoIcon,
+    //   hideSubNav: true,
+    //   showItemsOnMobile: false,
+    //   items: []
+    // },
     // {
     //   label: t('Liquidity'),
     //   icon: SwapIcon,
@@ -133,16 +136,16 @@ const config: (
     //   showItemsOnMobile: false,
     //   items: [].map((item) => addMenuItemSupported(item, chainId)),
     // },
-    {
-      label: t('Bridge'),
-      href: '/bridge',
-      icon: FarmIcon,
-      fillIcon: FarmIcon,
-      image: '/images/cgt.png',
-      showItemsOnMobile: false,
-      items: [
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
+    // {
+    //   label: t('Bridge'),
+    //   href: '/bridge',
+    //   icon: FarmIcon,
+    //   fillIcon: FarmIcon,
+    //   image: '/images/cgt.png',
+    //   showItemsOnMobile: false,
+    //   items: [
+    //   ].map((item) => addMenuItemSupported(item, chainId)),
+    // },
     // {
     //   label: t('Margin'),
     //   href: '/long',

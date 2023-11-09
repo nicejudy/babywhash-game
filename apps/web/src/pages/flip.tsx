@@ -1,11 +1,11 @@
-// import Flip from 'views/Flip'
+import Flip from 'views/Flip'
 
-// export default Flip
+export default Flip
 
-import { NotFound } from '@pancakeswap/uikit'
+// import { NotFound } from '@pancakeswap/uikit'
 
-const NotFoundPage = () => <NotFound />
+// const NotFoundPage = () => <NotFound />
 
-NotFoundPage.chains = []
+// NotFoundPage.chains = []
 
-export default NotFoundPage
+// export default NotFoundPage

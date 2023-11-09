@@ -1,11 +1,11 @@
-// import Dice from 'views/Dice'
+import Dice from 'views/Dice'
 
-// export default Dice
+export default Dice
 
-import { NotFound } from '@pancakeswap/uikit'
+// import { NotFound } from '@pancakeswap/uikit'
 
-const NotFoundPage = () => <NotFound />
+// const NotFoundPage = () => <NotFound />
 
-NotFoundPage.chains = []
+// NotFoundPage.chains = []
 
-export default NotFoundPage
+// export default NotFoundPage

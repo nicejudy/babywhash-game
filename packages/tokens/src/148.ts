@@ -19,6 +19,14 @@ export const shimmerTokens = {
     'CyberGlow Token',
     'https://cyberglow.es/',
   ),
+  bb: new ERC20Token(
+    ChainId.SHIMMER2,
+    '0xC33FEdB84EE8aD97141eF6647D305c9FFBdC7cd6',
+    18,
+    'BB',
+    'BebyWhash Token',
+    'https://cyberglow.es/',
+  ),
   cgusd: new ERC20Token(
     ChainId.SHIMMER2,
     '0x61f03096A3A908B2EE93ECa6223785427C215Ac5',

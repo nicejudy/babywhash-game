@@ -10,6 +10,7 @@ import { bitQueryServerClient, infoServerClient } from 'utils/graphql'
 import { CHAIN_IDS, CHAIN_IDS_DEX } from 'utils/wagmi'
 import Home from 'views/Home'
 import Swap from 'views/Swap'
+import Flip from 'views/Flip'
 import { SwapFeaturesProvider } from 'views/Swap/SwapFeaturesContext'
 
 const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
@@ -24,9 +25,12 @@ const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
       }}
     >
       {/* <Home /> */}
-      <SwapFeaturesProvider>
+      {/* <SwapFeaturesProvider>
         <Swap />
-      </SwapFeaturesProvider>
+      </SwapFeaturesProvider> */}
+
+      <Flip />
+      
     </SWRConfig>
   )
 }
